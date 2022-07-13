@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <title>Site Responsivo</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2>Influency</h2>
+            </div>
+            <!--logo-->
+            <div class="menu">
+                <a href="#">
+                    Home
+                </a>
+                <a href="#">
+                    Sobre
+                </a>
+                <a href="#">
+                    Contato
+                </a>
+                <a class="btn-menu" href="#">
+                    Cadastre-se
+                </a>
+            </div>
+            <!--menu-->
+            <div class="menu-mobile">
+                <i class="fa-solid fa-bars menu-mobile-icon"></i>
+                <div class="menu-items">
+                    <a href="">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Contato</a>
+                    <a href="">Cadastre-se</a>
+                </div>
+                <!--menu-items-->
+
+
+            </div>
+            <!--menu-mobile-->
+
+
+
+        </div>
+        <!--center-->
+    </header>
+
+    <section class="main">
+        <div class="center">
+            <div class="main__cta">
+                <h2>A influência da fluência</h2>
+                <p>Alavanque sua carreira e se destaque no mercado aprendendo inglês em poucos meses!</p>
+                <button>Comece já!</button>
+
+            </div>
+            <!--main-cta-->
+
+            <div class="diferenciais">
+                <div class="diferencial-single">
+                    <i class="fa-solid fa-people-roof"></i>
+                    <h2>Metodologia excepcional</h2>
+                    <p>Agende sua aula experimental com um de nossos professores e adentre a experiência de uma aula que
+                        despertará sensações sensacionais!</p>
+                </div>
+                <!--diferencial-single-->
+                <div class="diferencial-single">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <h2>Professores expecialistas</h2>
+                    <p>Os professores serão verdadeiros guias nessa experiência incrível, fornecendo conteúdo de
+                        qualidade! </p>
+                </div>
+                <!--diferencial-single-->
+
+                <div class="diferencial-single">
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <h2>Conheça o Incrível Metaverse</h2>
+                    <p>Uma tecnologia desenvolvida especialmente para simular um ambiente real aliado a experiências de
+                        imersão em games.</p>
+                </div>
+                <!--diferencial-single-->
+
+                <div class="diferencial-single">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                    <h2>Certificados desde o primeiro ciclo</h2>
+                    <p>Certificado de proficiência fornecido pelo Instituto Linguístico Internacional, aceito em mais de
+                        80 países!</p>
+                </div>
+                <!--diferencial-single-->
+
+
+
+
+
+            </div>
+            <!--diferencial-->
+
+        </div>
+        <!--center-->
+
+    </section>
+    <!--main-->
+
+    <section class="sobre">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Sobre a Influency</h2>
+                <p>Uma empresa que visa o bem-estar do cliente fornecendo conteúdo de fácil associação, tornando o
+                    aprendizado algo natural e simples.</p>
+
+            </div>
+            <div class="conteudo-sobre">
+                <p>Uma plataforma digital que utiliza o Metaverso, garantindo uma aula muito mais realista! Aulas ao
+                    vivo com professores altamente qualificados.</p>
+                <p>Nosso conteúdo é fornecido pela Universidade de Cambridge e personalizado para cada turma/aluno.Aulas
+                    ao vivo com professores altamente qualificados.</p>
+
+            </div>
+
+
+        </div>
+        <!--center-->
+
+    </section>
+    <!--sobre-->
+    <section class="conquistas">
+        <div class="center ">
+            <div class="conquista-single">
+                <h2>67</h2>
+                <p>Alunos</p>
+            </div>
+            <div class="conquista-single">
+                <h2>85</h2>
+                <p>Projetos</p>
+            </div>
+            <div class="conquista-single">
+                <h2>8</h2>
+                <p>Anos de Experiência</p>
+            </div>
+            <div class="conquista-single">
+                <h2>15</h2>
+                <p>Prêmios</p>
+            </div>
+
+        </div>
+        <!--center-->
+
+
+    </section>
+    <!--conquistas-->
+
+    <section class="sobre-empreendedor">
+        <div class="center">
+            <img class="sobre-empreendedor-img" src="./ametaverso.webp" />
+            <div class="empreendedor-content">
+                <h2>Experiência Virtual no Metaverse</h2>
+                <p>Somos uma empresa responsável pelo ramo linguístico a mais de 8 anos com o intuito de trazer para o
+                    estudante uma experiência completa no esino à distância.</p>
+                <p>Através do Metaverse proporcionamos uma experiência jamais vista nas salas de aula deixando-as
+                    atrativas e simulando uma realidade.</p>
+
+
+            </div>
+
+
+        </div>
+        <!--center-->
+
+        <script src="https://kit.fontawesome.com/6a7a667981.js" crossorigin="anonymous"></script>
+        <script>
+            var el = document.querySelector('.menu-mobile-icon');
+            el.addEventListener('click', () => {
+                var menuItems = document.querySelector('.menu-items');
+                if (menuItems.classList.contains('show')) {
+                    menuItems.classList.add('hide');
+                    menuItems.classList.remove('show');
+
+                } else {
+                    menuItems.classList.add('show');
+                    menuItems.classList.remove('hide');
+
+                }
+
+
+
+
+            })
+
+        </script>
+</body>
+
+</html>
